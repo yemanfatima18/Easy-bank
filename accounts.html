@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accounts — EasyBank</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app-bg"></div>
+
+<main class="app">
+    <nav class="nav">
+        <a href="index.html" class="logo-link">
+            <span class="logo-icon">◈</span>
+            <span class="logo-text">EasyBank</span>
+        </a>
+        <div class="nav-links">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="create.html" class="nav-link">Create Account</a>
+            <a href="deposit.html" class="nav-link">Deposit</a>
+            <a href="withdraw.html" class="nav-link">Withdraw</a>
+            <a href="transfer.html" class="nav-link">Transfer</a>
+            <a href="accounts.html" class="nav-link active">Accounts</a>
+        </div>
+    </nav>
+
+    <div class="page-content">
+        <header class="page-header">
+            <h1><span class="icon">◆</span> Your Accounts</h1>
+            <p class="page-desc">All your bank accounts at a glance</p>
+        </header>
+
+        <section class="accounts-section">
+            <div id="accounts" class="accounts-grid"></div>
+            <p id="empty-state" class="empty-state"><span class="empty-icon">◈</span><br>No accounts yet. <a href="create.html">Create one</a> to get started.</p>
+        </section>
+    </div>
+
+    <div id="msg" class="toast"></div>
+
+    <footer class="footer">EasyBank — Your money, secured</footer>
+</main>
+
+<script src="script.js"></script>
+<script>
+    displayAccounts();
+</script>
+</body>
+</html>

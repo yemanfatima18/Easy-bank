@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deposit — EasyBank</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app-bg"></div>
+
+<main class="app">
+    <nav class="nav">
+        <a href="index.html" class="logo-link">
+            <span class="logo-icon">◈</span>
+            <span class="logo-text">EasyBank</span>
+        </a>
+        <div class="nav-links">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="create.html" class="nav-link">Create Account</a>
+            <a href="deposit.html" class="nav-link active">Deposit</a>
+            <a href="withdraw.html" class="nav-link">Withdraw</a>
+            <a href="transfer.html" class="nav-link">Transfer</a>
+            <a href="accounts.html" class="nav-link">Accounts</a>
+        </div>
+    </nav>
+
+    <div class="page-content">
+        <header class="page-header">
+            <h1><span class="icon icon-deposit">↓</span> Deposit Money</h1>
+            <p class="page-desc">Add funds to an existing account</p>
+        </header>
+
+        <section class="card form-card">
+            <div class="form-group">
+                <input type="number" id="depAcc" placeholder="Account #">
+                <input type="number" id="depAmt" placeholder="Amount ₹">
+                <button class="btn btn-deposit" onclick="deposit()">Deposit</button>
+            </div>
+        </section>
+    </div>
+
+    <div id="msg" class="toast"></div>
+
+    <footer class="footer">EasyBank — Your money, secured</footer>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

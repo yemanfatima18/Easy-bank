@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EasyBank — Online Bank</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app-bg"></div>
+
+<main class="app">
+    <nav class="nav">
+        <a href="index.html" class="logo-link">
+            <span class="logo-icon">◈</span>
+            <span class="logo-text">EasyBank</span>
+        </a>
+        <div class="nav-links">
+            <a href="index.html" class="nav-link active">Home</a>
+            <a href="create.html" class="nav-link">Create Account</a>
+            <a href="deposit.html" class="nav-link">Deposit</a>
+            <a href="withdraw.html" class="nav-link">Withdraw</a>
+            <a href="transfer.html" class="nav-link">Transfer</a>
+            <a href="accounts.html" class="nav-link">Accounts</a>
+        </div>
+    </nav>
+
+    <header class="header">
+        <div class="logo">
+            <span class="logo-icon">◈</span>
+            <h1>EasyBank</h1>
+            <span class="tagline">Your money, secured</span>
+        </div>
+    </header>
+
+    <div class="actions-grid home-grid">
+        <a href="create.html" class="card card-accent card-link">
+            <h2><span class="icon">+</span> New Account</h2>
+            <p class="card-desc">Open a new bank account</p>
+        </a>
+        <a href="deposit.html" class="card card-link">
+            <h2><span class="icon">↓</span> Deposit</h2>
+            <p class="card-desc">Add money to an account</p>
+        </a>
+        <a href="withdraw.html" class="card card-link">
+            <h2><span class="icon">↑</span> Withdraw</h2>
+            <p class="card-desc">Withdraw from an account</p>
+        </a>
+        <a href="transfer.html" class="card card-link">
+            <h2><span class="icon">⇄</span> Transfer</h2>
+            <p class="card-desc">Move money between accounts</p>
+        </a>
+    </div>
+
+    <section class="accounts-section home-accounts">
+        <h2 class="accounts-title"><span class="icon">◆</span> Quick View</h2>
+        <div id="accounts" class="accounts-grid"></div>
+        <p id="empty-state" class="empty-state"><span class="empty-icon">◈</span><br>No accounts yet. <a href="create.html">Create one</a> to get started.</p>
+        <a href="accounts.html" class="view-all-link">View all accounts →</a>
+    </section>
+
+    <div id="msg" class="toast"></div>
+
+    <footer class="footer">EasyBank — Your money, secured</footer>
+</main>
+
+<script src="script.js"></script>
+<script>
+    if (document.getElementById('accounts')) displayAccounts();
+</script>
+</body>
+</html>
