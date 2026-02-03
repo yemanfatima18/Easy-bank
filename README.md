@@ -16,7 +16,7 @@ Double-click `index.html` or drag it into your browser. No server, no npm instal
 
 ## How it's put together
 
-Each feature has its own page: create, deposit, withdraw, transfer, and the accounts list. Navigation sits at the top so you can hop between them. `script.js` holds all the logic—create, deposit, withdraw, transfer, delete, and the account display. `style.css` handles the dark theme, cards, buttons, and layout. The app reads and writes to localStorage under the key `accounts`, so your data stays put as long as you're on the same browser and device.
+Each feature has its own page: create, deposit, withdraw, transfer, and the accounts list. Navigation sits at the top so you can hop between them. `script.js` holds all the logic create, deposit, withdraw, transfer, delete, and the account display. `style.css` handles the dark theme, cards, buttons, and layout. The app reads and writes to localStorage under the key `accounts`, so your data stays put as long as you're on the same browser and device.
 
 ## Files
 
@@ -32,4 +32,5 @@ Each feature has its own page: create, deposit, withdraw, transfer, and the acco
 ## A note on data
 
 Everything is stored locally in your browser. No cloud, no database. That means your accounts are private and offline-friendly, but they're also tied to this browser on this machine. Clear site data or switch browsers and the accounts go away. Good for demos, practice, or personal use—not for anything that needs to stick around long-term or sync across devices.
+
 
