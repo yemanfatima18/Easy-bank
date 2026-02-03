@@ -1,6 +1,6 @@
 # EasyBank
 
-A mini banking app built with plain HTML, CSS, and JavaScript. No frameworks, no build step—just open the file and go. You can create accounts, deposit and withdraw cash, transfer between accounts, and delete accounts when you're done. Everything runs in your browser and data lives in localStorage, so it persists across sessions.
+A mini banking app built with plain HTML, CSS, and JavaScript. No frameworks, no build step just open the file and go. You can create accounts, deposit and withdraw cash, transfer between accounts, and delete accounts when you're done. Everything runs in your browser and data lives in localStorage, so it persists across sessions.
 
 ## What you can do
 
@@ -20,15 +20,16 @@ Each feature has its own page: create, deposit, withdraw, transfer, and the acco
 
 ## Files
 
-- `index.html` — Home with feature cards and a quick account preview
-- `create.html` — New account form
-- `deposit.html` — Deposit form
-- `withdraw.html` — Withdraw form
-- `transfer.html` — Transfer form
-- `accounts.html` — Full account list
-- `script.js` — Shared logic
-- `style.css` — Styles
+- `index.html`  Home with feature cards and a quick account preview
+- `create.html`  New account form
+- `deposit.html`  Deposit form
+- `withdraw.html`  Withdraw form
+- `transfer.html`  Transfer form
+- `accounts.html`  Full account list
+- `script.js`  Shared logic
+- `style.css`  Styles
 
 ## A note on data
 
 Everything is stored locally in your browser. No cloud, no database. That means your accounts are private and offline-friendly, but they're also tied to this browser on this machine. Clear site data or switch browsers and the accounts go away. Good for demos, practice, or personal use—not for anything that needs to stick around long-term or sync across devices.
+
